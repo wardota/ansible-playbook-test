@@ -1,0 +1,12 @@
+---
+- name: gatherfact-test
+  hosts: target
+  gather_facts: no
+  serial: 4
+  connection: network_cli
+  ignore_errors: no
+  roles:
+    - name: Gatherfact Test
+      role: gatherfact
+
+
