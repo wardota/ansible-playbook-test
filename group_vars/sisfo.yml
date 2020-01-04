@@ -7,7 +7,7 @@ ansible_python_interpreter: /usr/bin/env python
 
 ansible_user: cisco2
 ansible_password: cisco
-ansible_network_os: ios
+#ansible_network_os: ios
 ansible_ssh_user: cisco2
 ansible_ssh_pass: cisco
 # become: yes
