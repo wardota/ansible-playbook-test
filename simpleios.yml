@@ -1,18 +1,12 @@
 ---
 - name: test
-  hosts: sw_sisfo
+  hosts: sisfo
   gather_facts: no
   serial: 8
   # gather_timeout: 60
   connection: network_cli
   ignore_errors: no
   gather_facts: no
-  vars:
-    ansible_user: cisco2
-    ansible_password: cisco
-    ansible_network_os: ios
-    ansible_ssh_user: cisco2
-    ansible_ssh_pass: cisco
   tasks:
     - name: Gather all legacy facts
       ios_facts:
