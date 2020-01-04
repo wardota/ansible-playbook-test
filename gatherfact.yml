@@ -1,6 +1,6 @@
 ---
 - name: gatherfact-test
-  hosts: target
+  hosts: 127.0.0.1
   gather_facts: no
   serial: 4
   connection: network_cli
