@@ -1,0 +1,9 @@
+---
+- name: test
+  hosts: localhost
+  gather_facts: yes
+  vars:
+    hasd: asda
+  tasks:
+    - debug: 
+        var: hasd
