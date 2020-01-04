@@ -1,0 +1,10 @@
+---
+- name: test
+  hosts: sw_sisfo
+  gather_facts: no
+  vars:
+    hasd: asda
+  tasks:
+    - name: Gather all legacy facts
+      ios_facts:
+        gather_subset: all
